@@ -117,7 +117,7 @@ const EmployeeForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://127.0.0.1:8000/predict", formData);
+      const response = await axios.post(`${process.env.REACT_APP_API_BASE}/predict`, formData);
       setResult(response.data.prediction);
     } catch (error) {
       console.error("Prediction error:", error);

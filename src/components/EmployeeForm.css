@@ -1,0 +1,75 @@
+/* Container */
+.form-wrapper {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Grid layout for 3 columns */
+.employee-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Label & input structure */
+.employee-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Inputs and dropdowns */
+.employee-form input,
+.employee-form select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 6px;
+  transition: border-color 0.2s;
+}
+
+.employee-form input:focus,
+.employee-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button wrapper spans all columns */
+.button-wrapper {
+  grid-column: span 3;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Button style */
+.button-wrapper button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-wrapper button:hover {
+  background-color: #0056b3;
+}
+
+/* Prediction result */
+.result {
+  grid-column: span 3;
+  margin-top: 25px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: #2c3e50;
+}

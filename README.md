@@ -1,47 +1,40 @@
-# employee-attrition-frontend
-# Getting Started with Create React App
+Employee Attrition Predictor – Frontend (React)
+This is the frontend of the Employee Attrition Prediction system. It provides a clean, user-friendly interface to input employee data and view AI-powered predictions on whether an employee is likely to leave the company.
+🌐 Live Demo: https://employee-attrition-vishal.netlify.app
+🚀 Features
+•	• Built with React + TypeScript
+•	• Styled form with clean 3-column layout
+•	• Uses dropdowns for categorical features
+•	• Connects to a FastAPI ML backend to get predictions
+•	• Fully responsive and deployed to Netlify
+🧠 Tech Stack
+Frontend      | Description
+------------- | ---------------------------
+React         | Component-based UI
+TypeScript    | Static typing
+Axios         | API requests to FastAPI
+CSS Grid      | Clean layout styling
+Netlify       | Hosting and deployment
+📸 Screenshots
+_(Insert screenshots of the form UI and prediction result here)_
+⚙️ How to Run Locally
+# Clone the repo
+git clone https://github.com/vishaldharwadkar/employee-attrition-frontend.git
+cd employee-attrition-frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Install dependencies
+npm install
 
-## Available Scripts
+# Create .env file
+echo "REACT_APP_API_BASE=http://127.0.0.1:8000" > .env
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Start dev server
+npm start
+🔗 Connected Projects
+- Backend (FastAPI): https://github.com/vishaldharwadkar/employee-attrition-ml
+- Model Endpoint: https://employee-attrition-ml-04ho.onrender.com/docs
+🙌 Author
+Vishal Dharwadkar
+GitHub: https://github.com/vishaldharwadkar
+🏁 License
+This project is open source and available under the MIT License.
